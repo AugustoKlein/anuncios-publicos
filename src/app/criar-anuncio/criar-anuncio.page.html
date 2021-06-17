@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Criar Anuncio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+    <ion-content padding="true" class="has-header">
+      <ion-card>
+        <ion-card-title>Crie seu anúncio<ion-icon name="duplicate-outline"></ion-icon></ion-card-title>
+        
+        <ion-input placeholder="Título" id="titulo" [(ngModel)]="titulo" ></ion-input>
+        <ion-input placeholder="Anúncio" id="article" [(ngModel)]="artigo"></ion-input>
+        <ion-button (click) = "saveAnuncio()" expand="block">
+          <ion-icon name="add-circle-sharp"></ion-icon>
+          Criar
+        </ion-button>
+      </ion-card>
+    </ion-content>
+

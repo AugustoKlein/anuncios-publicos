@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Anuncios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-content padding="true" class="has-header">
+     <ion-card>
+
+       <ion-list id="anuncios-list2" *ngFor="let anuncio of getAnuncios()">
+      
+          <ion-item >
+            <ion-label>
+              <h2><b>{{anuncio.title}}</b></h2>
+              <p style="white-space:normal;">{{anuncio.article}}</p>
+              <p><br/></p>
+              <p style="white-space:normal;"><b>Autor:</b> {{anuncio.autor}}</p>
+            </ion-label>
+          </ion-item>
+
+        </ion-list>
+      </ion-card>
+    </ion-content>
+</ion-content>

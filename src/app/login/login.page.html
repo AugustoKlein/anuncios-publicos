@@ -1,0 +1,12 @@
+<ion-content padding="true" class="has-header">
+  <ion-card>
+    <ion-card-title>AP: Anúncios Públicos<ion-icon name="logo-wechat"></ion-icon></ion-card-title>
+    
+    <ion-input placeholder="User" id="user" [(ngModel)]="user" ></ion-input>
+    <ion-input placeholder="senha" id="senha" [(ngModel)]="senha"></ion-input>
+    <ion-button (click) = "doLogin()" expand="block">
+      <ion-icon name="add-circle-sharp"></ion-icon>
+      Login
+    </ion-button>
+  </ion-card>
+</ion-content>
